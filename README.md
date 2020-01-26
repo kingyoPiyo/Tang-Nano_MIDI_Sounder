@@ -16,6 +16,8 @@ LCDには発音中のスロットが表示されます。
 - MIDI UART入力ピン：18
 - 音声出力ピン：17 (ΔΣ-DAC出力、1kΩ+0.01uFのLPFと、10uFくらいのDCカットコンデンサを付けて下さい。)
 
+# 回路図
+![Schematic](doc/Schematic.png)
 
 # 開発環境
 - IDE : GOWIN FPGA Designer Version1.9.2.02 Beta build(35976)
@@ -24,4 +26,8 @@ LCDには発音中のスロットが表示されます。
 - seeed Sipeed Tang Nano FPGAボード GW1N-1 FPGAチップ搭載 https://jp.seeedstudio.com/Sipeed-Tang-Nano-FPGA-board-powered-by-GW1N-1-FPGA-p-4304.html
 - SiPeed Tang Nanoの環境構築(Windows編) https://qiita.com/tomorrow56/items/7e3508ef43d3d11fefab
 - MIDIメッセージ一覧 https://www.g200kg.com/jp/docs/tech/midi.html
-- MIDIのノートナンバーと周波数の対応表 https://qiita.com/tomorrow56/items/7e3508ef43d3d11fefab
+- MIDIのノートナンバーと周波数の対応表 https://qiita.com/tomorrow56/items/7e3508ef43d3d11fefab  
+  
+以下はUSB-UARTからMIDIメッセージを送出するのに使えるツール類
+- loopMIDI https://www.tobias-erichsen.de/software/loopmidi.html
+- The Hairless MIDI to Serial Bridge https://projectgus.github.io/hairless-midiserial/
