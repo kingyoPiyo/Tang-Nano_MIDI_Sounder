@@ -7,14 +7,14 @@ module LCD_Controller (
     input   wire            i_clk,
     input   wire            i_res_n,
     input   wire            i_note_en,
-    input   wire    [6:0]   i_note_num,
+    input   wire    [ 6:0]  i_note_num,
     output  wire            o_clk,
     output  wire            o_hsync,
     output  wire            o_vsync,
     output  wire            o_de,
     output  wire    [ 9:0]  o_x_cnt,
     output  wire    [ 8:0]  o_y_cnt,
-    output	wire	[15:0]	o_lcd_data
+    output  wire    [15:0]  o_lcd_data
     );
 
     /**************************************************************
@@ -98,9 +98,9 @@ module LCD_Controller (
     wire w_bar_r = w_noteAddr[1:0] == 2'd0 || w_noteAddr[1:0] == 2'd3;
     wire w_bar_g = w_noteAddr[1:0] == 2'd1 || w_noteAddr[1:0] == 2'd3;
     wire w_bar_b = w_noteAddr[1:0] == 2'd2 || w_noteAddr[1:0] == 2'd3;
-    assign o_lcd_data[15:0] = o_y_cnt[8:0] > 9'd256 ? 16'h0000 :						// 範囲外
-                            (w_bar && o_y_cnt[8:0] <= 9'd255) ? {{5{w_bar_r}}, {6{w_bar_g}}, {5{w_bar_b}}} :	// バー
-                            w_sep_line ? 16'hFFFF : 16'h0000;						// 横線
+    assign o_lcd_data[15:0] = o_y_cnt[8:0] > 9'd256 ? 16'h0000 :                // 範囲外
+                            (w_bar && o_y_cnt[8:0] <= 9'd255) ? {{5{w_bar_r}}, {6{w_bar_g}}, {5{w_bar_b}}} :    // バー
+                            w_sep_line ? 16'hFFFF : 16'h0000;                   // 横線
 
 
 endmodule

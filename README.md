@@ -4,6 +4,7 @@ GW1N-1 FPGAチップを搭載した[Tang Nano FPGAボード](https://jp.seeedstu
 Tang Nano FPGAの18ピンに38.4kbpsのMIDI UARTメッセージを入力すると音が出ます。  
 LCDには発音中のスロットが表示されます。 
 手っ取り早く試したい方は、impl\pnr\Tang-Nano_MIDI_Sounder.fs をボードに書き込んで下さい。  
+なお、真面目にRTL-Simをしていないので、怪しい点が多々あるかと思いますがご了承ください・・・。  
 [![](https://img.youtube.com/vi/XFGDiXRbHsQ/0.jpg)](https://www.youtube.com/watch?v=XFGDiXRbHsQ)
 
 # 仕様
