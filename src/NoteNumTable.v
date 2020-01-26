@@ -1,10 +1,7 @@
 /********************************************************
- * MIDI Note番号からDDSアキュムレータ加算値への変換テーブル
- * Date: 2020/01/26
- *
- * アキュムレータbit数: 26bit
- * 周波数: 72MHz / 2 / 64
- *
+ * Title    : MIDI Note Num to DDS AccVal Table
+ * Date     : 2020/01/26
+ * Design   : kingyo
  ********************************************************/
 module NoteNumTable (
     input   wire    [ 6:0]  notenum,
