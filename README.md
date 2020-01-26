@@ -1,7 +1,7 @@
 # Tang-Nano_MIDI_Sounder
  
 GW1N-1 FPGAチップを搭載した[Tang Nano FPGAボード](https://jp.seeedstudio.com/Sipeed-Tang-Nano-FPGA-board-powered-by-GW1N-1-FPGA-p-4304.html)で動作するMIDIサウンダです。  
-Tang Nano FPGAボードのzzピンに38.4kbpsのMIDI UARTメッセージを入力すると音が出ます。  
+Tang Nano FPGAの18ピンに38.4kbpsのMIDI UARTメッセージを入力すると音が出ます。  
 LCDには発音中のスロットが表示されます。 
 手っ取り早く試したい方は、impl\pnr\Tang-Nano_MIDI_Sounder.fs をボードに書き込んで下さい。  
 [![](https://img.youtube.com/vi/XFGDiXRbHsQ/0.jpg)](https://www.youtube.com/watch?v=XFGDiXRbHsQ)
