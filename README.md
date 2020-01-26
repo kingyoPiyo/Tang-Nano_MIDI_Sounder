@@ -17,7 +17,8 @@ LCDには発音中のスロットが表示されます。
 - 音声出力ピン：17 (ΔΣ-DAC出力、1kΩ+0.01uFのLPFと、10uFくらいのDCカットコンデンサを付けて下さい。)
 
 # 回路図
-![Schematic](doc/Schematic.png)
+![Schematic](doc/Schematic.png)  
+※LCDの配線は省略
 
 # 開発環境
 - IDE : GOWIN FPGA Designer Version1.9.2.02 Beta build(35976)
