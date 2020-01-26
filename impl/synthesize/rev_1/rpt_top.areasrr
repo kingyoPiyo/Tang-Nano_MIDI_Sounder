@@ -1,0 +1,226 @@
+
+Copyright (C) 1994-2019 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: P-2019.03G
+Install: C:\Gowin\Gowin_V1.9.2.02Beta\SynplifyPro
+OS: Windows 6.2
+
+Hostname: ZAL1
+
+Implementation : rev_1
+
+#### START OF AREA REPORT #####[
+
+Part:			GW1N_1QFN48-6 (GoWin)
+
+-------------------------------------------------------------------
+########   Utilization report for  Top level view:   top   ########
+===================================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     122                100 %                
+======================================================
+Total SEQUENTIAL ELEMENTS in the block top:	122 (18.68 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+LUTS          341                100 %                
+MUX2_LUT5     28                 100 %                
+MUX2_LUT6     2                  100 %                
+ALU           102                100 %                
+======================================================
+Total COMBINATIONAL LOGIC in the block top:	473 (72.43 % Utilization)
+
+
+MEMORY ELEMENTS
+Name                Total elements     Utilization     Notes
+------------------------------------------------------------
+BLOCK RAMS/ROMS     4                  100 %                
+============================================================
+Total MEMORY ELEMENTS in the block top:	4 (0.61 % Utilization)
+
+---------------------------------------------------------
+########   Utilization report for  cell:   DDS   ########
+Instance path:   top.DDS                                 
+=========================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     19                 15.6 %               
+======================================================
+Total SEQUENTIAL ELEMENTS in the block top.DDS:	19 (2.91 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     41                 12 %                 
+ALU      38                 37.3 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block top.DDS:	79 (12.10 % Utilization)
+
+
+MEMORY ELEMENTS
+Name                Total elements     Utilization     Notes
+------------------------------------------------------------
+BLOCK RAMS/ROMS     3                  75 %                 
+============================================================
+Total MEMORY ELEMENTS in the block top.DDS:	3 (0.46 % Utilization)
+
+---------------------------------------------------------------
+########   Utilization report for  cell:   DP_ADDVAL   ########
+Instance path:   DDS.DP_ADDVAL                                 
+===============================================================
+
+MEMORY ELEMENTS
+Name                Total elements     Utilization     Notes
+------------------------------------------------------------
+BLOCK RAMS/ROMS     2                  50 %                 
+============================================================
+Total MEMORY ELEMENTS in the block DDS.DP_ADDVAL:	2 (0.31 % Utilization)
+
+------------------------------------------------------------
+########   Utilization report for  cell:   SP_ACC   ########
+Instance path:   DDS.SP_ACC                                 
+============================================================
+
+MEMORY ELEMENTS
+Name                Total elements     Utilization     Notes
+------------------------------------------------------------
+BLOCK RAMS/ROMS     1                  25 %                 
+============================================================
+Total MEMORY ELEMENTS in the block DDS.SP_ACC:	1 (0.15 % Utilization)
+
+--------------------------------------------------------------------
+########   Utilization report for  cell:   DeltaSigma_DAC   ########
+Instance path:   top.DeltaSigma_DAC                                 
+====================================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     7                  5.74 %               
+======================================================
+Total SEQUENTIAL ELEMENTS in the block top.DeltaSigma_DAC:	7 (1.07 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+ALU      6                  5.88 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block top.DeltaSigma_DAC:	6 (0.92 % Utilization)
+
+---------------------------------------------------------------
+########   Utilization report for  cell:   Gowin_PLL   ########
+Instance path:   top.Gowin_PLL                                 
+===============================================================
+--------------------------------------------------------------------
+########   Utilization report for  cell:   LCD_Controller   ########
+Instance path:   top.LCD_Controller                                 
+====================================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     21                 17.2 %               
+======================================================
+Total SEQUENTIAL ELEMENTS in the block top.LCD_Controller:	21 (3.22 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     36                 10.6 %               
+ALU      36                 35.3 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block top.LCD_Controller:	72 (11.03 % Utilization)
+
+------------------------------------------------------------------
+########   Utilization report for  cell:   MIDI_Decoder   ########
+Instance path:   top.MIDI_Decoder                                 
+==================================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     30                 24.6 %               
+======================================================
+Total SEQUENTIAL ELEMENTS in the block top.MIDI_Decoder:	30 (4.59 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     55                 16.1 %               
+ALU      6                  5.88 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block top.MIDI_Decoder:	61 (9.34 % Utilization)
+
+
+MEMORY ELEMENTS
+Name                Total elements     Utilization     Notes
+------------------------------------------------------------
+BLOCK RAMS/ROMS     1                  25 %                 
+============================================================
+Total MEMORY ELEMENTS in the block top.MIDI_Decoder:	1 (0.15 % Utilization)
+
+----------------------------------------------------------------
+########   Utilization report for  cell:   DP_MIDIMSG   ########
+Instance path:   MIDI_Decoder.DP_MIDIMSG                        
+================================================================
+
+MEMORY ELEMENTS
+Name                Total elements     Utilization     Notes
+------------------------------------------------------------
+BLOCK RAMS/ROMS     1                  25 %                 
+============================================================
+Total MEMORY ELEMENTS in the block MIDI_Decoder.DP_MIDIMSG:	1 (0.15 % Utilization)
+
+------------------------------------------------------------------
+########   Utilization report for  cell:   NoteNumTable   ########
+Instance path:   top.NoteNumTable                                 
+==================================================================
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+LUTS          165                48.4 %               
+MUX2_LUT5     28                 100 %                
+MUX2_LUT6     2                  100 %                
+======================================================
+Total COMBINATIONAL LOGIC in the block top.NoteNumTable:	195 (29.86 % Utilization)
+
+-------------------------------------------------------------
+########   Utilization report for  cell:   UART_Rx   ########
+Instance path:   top.UART_Rx                                 
+=============================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     45                 36.9 %               
+======================================================
+Total SEQUENTIAL ELEMENTS in the block top.UART_Rx:	45 (6.89 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     40                 11.7 %               
+ALU      16                 15.7 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block top.UART_Rx:	56 (8.58 % Utilization)
+
+
+##### END OF AREA REPORT #####]
+

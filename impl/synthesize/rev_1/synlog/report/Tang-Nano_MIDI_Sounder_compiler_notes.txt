@@ -1,0 +1,26 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG1349 :	| Running Verilog Compiler in System Verilog mode
+@N: CG1350 :	| Running Verilog Compiler in Multiple File Compilation Unit mode
+@N: CG364 :"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\DeltaSigma_DAC.v":8:0:8:9|Synthesizing module work_D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\DDS.v_unit in library work.
+@N: CG364 :"C:\Gowin\Gowin_V1.9.2.02Beta\SynplifyPro\lib\generic\gw1n.v":1800:7:1800:9|Synthesizing module PLL in library work.
+@N: CG364 :"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\ip\pll\gowin_pll.v":8:7:8:15|Synthesizing module Gowin_PLL in library work.
+@N: CG364 :"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\UART_Rx.v":6:7:6:13|Synthesizing module UART_Rx in library work.
+@N: CG364 :"C:\Gowin\Gowin_V1.9.2.02Beta\SynplifyPro\lib\generic\gw1n.v":1239:7:1239:8|Synthesizing module DP in library work.
+@N: CG364 :"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\ip\dram1\dram1.v":8:7:8:16|Synthesizing module DP_MIDIMSG in library work.
+@N: CG364 :"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\MIDI_Decoder.v":8:8:8:19|Synthesizing module MIDI_Decoder in library work.
+@N: CG364 :"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\NoteNumTable.v":9:7:9:18|Synthesizing module NoteNumTable in library work.
+@N: CG364 :"C:\Gowin\Gowin_V1.9.2.02Beta\SynplifyPro\lib\generic\gw1n.v":1323:7:1323:10|Synthesizing module DPX9 in library work.
+@N: CG364 :"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\ip\dram2\dram2.v":8:7:8:15|Synthesizing module DP_ADDVAL in library work.
+@N: CG364 :"C:\Gowin\Gowin_V1.9.2.02Beta\SynplifyPro\lib\generic\gw1n.v":603:7:603:8|Synthesizing module SP in library work.
+@N: CG364 :"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\ip\spram\spram.v":8:7:8:12|Synthesizing module SP_ACC in library work.
+@N: CG364 :"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\DDS.v":6:7:6:9|Synthesizing module DDS in library work.
+@N: CG364 :"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\DeltaSigma_DAC.v":10:7:10:20|Synthesizing module DeltaSigma_DAC in library work.
+@N: CG364 :"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\LCD_Controller.v":6:7:6:20|Synthesizing module LCD_Controller in library work.
+@N: CG179 :"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\LCD_Controller.v":72:91:72:106|Removing redundant assignment.
+@N: CG179 :"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\LCD_Controller.v":74:92:74:107|Removing redundant assignment.
+@N: CG364 :"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\top.v":6:7:6:9|Synthesizing module top in library work.
+@N: CL159 :"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\top.v":12:28:12:32|Input btn_b is unused.
+@N: CL201 :"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\MIDI_Decoder.v":27:4:27:9|Trying to extract state machine for register r_state.
+@N|Running in 64-bit mode
+

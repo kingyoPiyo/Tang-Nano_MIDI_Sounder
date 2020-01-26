@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+The file contains the job information from compiler to be displayed as part of the summary report.
+*******************************************************************************************-->
+
+<job_run_status name="compiler"> 
+  <report_link name="Detailed report">
+    <data>D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\impl\synthesize\rev_1\synlog\Tang-Nano_MIDI_Sounder_compiler.srr</data>
+    <title>Synopsys HDL Compiler</title>
+  </report_link> 
+  <job_status>
+    <data>Completed    </data>
+  </job_status>
+<job_info> 
+			<info name="Notes">
+  <data>25</data>
+  <report_link name="more"><data>D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\impl\synthesize\rev_1\synlog\report\Tang-Nano_MIDI_Sounder_compiler_notes.txt</data></report_link>
+  </info>
+			<info name="Warnings">
+  <data>12</data>
+  <report_link name="more"><data>D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\impl\synthesize\rev_1\synlog\report\Tang-Nano_MIDI_Sounder_compiler_warnings.txt</data></report_link>
+  </info>
+			<info name="Errors">
+  <data>0</data>
+  <report_link name="more"><data>D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\impl\synthesize\rev_1\synlog\report\Tang-Nano_MIDI_Sounder_compiler_errors.txt</data></report_link>
+  </info>
+			<info name="CPU Time">
+  <data>-</data>
+  </info>
+			<info name="Real Time">
+  <data>00h:00m:04s</data>
+  </info>
+			<info name="Peak Memory">
+  <data>-</data>
+  </info>
+			<info name="Date &amp;Time">
+  <data type="timestamp">1580038315</data>
+  </info>
+			</job_info>
+</job_run_status>

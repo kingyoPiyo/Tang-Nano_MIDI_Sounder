@@ -1,0 +1,13 @@
+@W: CS141 :"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\ip\dp_dds\dpdds.v":3:7:3:11|Unrecognized synthesis directive title. Verify the correct directive name.
+@W: CS141 :"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\ip\dram1\dram1.v":3:7:3:11|Unrecognized synthesis directive title. Verify the correct directive name.
+@W: CS141 :"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\ip\dram2\dram2.v":3:7:3:11|Unrecognized synthesis directive title. Verify the correct directive name.
+@W: CS141 :"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\ip\pll\gowin_pll.v":3:7:3:11|Unrecognized synthesis directive title. Verify the correct directive name.
+@W: CS141 :"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\ip\spram\spram.v":3:7:3:11|Unrecognized synthesis directive title. Verify the correct directive name.
+@W: CS263 :"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\ip\dram2\dram2.v":77:9:77:20|Port-width mismatch for port DIA. The port definition is 18 bits, but the actual port connection bit width is 9. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\ip\dram2\dram2.v":79:9:79:20|Port-width mismatch for port DIB. The port definition is 18 bits, but the actual port connection bit width is 9. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\ip\dram2\dram2.v":63:9:63:21|Port-width mismatch for port DOA. The port definition is 18 bits, but the actual port connection bit width is 9. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\ip\dram2\dram2.v":64:9:64:21|Port-width mismatch for port DOB. The port definition is 18 bits, but the actual port connection bit width is 9. Adjust either the definition or the instantiation of this port.
+@W: CG781 :"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\DDS.v":62:14:62:14|Input dinb on instance dram2 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CS263 :"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\DDS.v":74:15:74:31|Port-width mismatch for port din. The port definition is 32 bits, but the actual port connection bit width is 26. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\DDS.v":67:16:67:39|Port-width mismatch for port dout. The port definition is 32 bits, but the actual port connection bit width is 26. Adjust either the definition or the instantiation of this port.
+

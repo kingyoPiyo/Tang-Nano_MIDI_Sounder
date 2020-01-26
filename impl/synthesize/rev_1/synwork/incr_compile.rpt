@@ -1,0 +1,59 @@
+
+Copyright (C) 1994-2019 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: P-2019.03G
+Install: C:\Gowin\Gowin_V1.9.2.02Beta\SynplifyPro
+OS: Windows 6.2
+
+Hostname: ZAL1
+
+Implementation : rev_1
+Synopsys HDL compiler and linker, Version comp2019q1p1, Build 307R, Built Sep 25 2019 09:21:26
+
+Modified Files: 0
+FID:  path (prevtimestamp, timestamp)
+
+*******************************************************************
+Modules that may have changed as a result of file changes: 0
+MID:  lib.cell.view
+
+*******************************************************************
+Unmodified files: 17
+FID:  path (timestamp)
+0        C:\Gowin\Gowin_V1.9.2.02Beta\SynplifyPro\lib\generic\gw1n.v (2019-09-26 02:52:32)
+1        C:\Gowin\Gowin_V1.9.2.02Beta\SynplifyPro\lib\vlog\hypermods.v (2019-09-26 01:18:26)
+2        C:\Gowin\Gowin_V1.9.2.02Beta\SynplifyPro\lib\vlog\scemi_objects.v (2019-09-26 01:18:26)
+3        C:\Gowin\Gowin_V1.9.2.02Beta\SynplifyPro\lib\vlog\scemi_pipes.svh (2019-09-26 01:18:26)
+4        C:\Gowin\Gowin_V1.9.2.02Beta\SynplifyPro\lib\vlog\umr_capim.v (2019-09-26 01:18:26)
+5        D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\DDS.v (2020-01-26 20:03:54)
+6        D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\DeltaSigma_DAC.v (2020-01-26 19:25:06)
+7        D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\LCD_Controller.v (2020-01-26 19:24:27)
+8        D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\MIDI_Decoder.v (2020-01-26 19:42:48)
+9        D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\NoteNumTable.v (2020-01-26 19:22:47)
+10       D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\UART_Rx.v (2020-01-26 19:31:19)
+11       D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\ip\dp_dds\dpdds.v (2020-01-26 17:48:47)
+12       D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\ip\dram1\dram1.v (2020-01-25 19:24:22)
+13       D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\ip\dram2\dram2.v (2020-01-26 07:33:19)
+14       D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\ip\pll\gowin_pll.v (2020-01-12 01:20:11)
+15       D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\ip\spram\spram.v (2020-01-26 08:03:38)
+16       D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\top.v (2020-01-26 19:25:40)
+
+*******************************************************************
+Unchanged modules: 12
+MID:  lib.cell.view
+0        work.DDS.verilog
+1        work.DP_ADDVAL.verilog
+2        work.DP_DDS.verilog
+3        work.DP_MIDIMSG.verilog
+4        work.DeltaSigma_DAC.verilog
+5        work.Gowin_PLL.verilog
+6        work.LCD_Controller.verilog
+7        work.MIDI_Decoder.verilog
+8        work.NoteNumTable.verilog
+9        work.SP_ACC.verilog
+10       work.UART_Rx.verilog
+11       work.top.verilog

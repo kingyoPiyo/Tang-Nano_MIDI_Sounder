@@ -1,0 +1,32 @@
+Info    (PA0001) : "D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\impl\synthesize\rev_1\Tang-Nano_MIDI_Sounder.vm" | Reading netlist file.
+Info    (PA0004) : Parsing netlist file 'D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\impl\synthesize\rev_1\Tang-Nano_MIDI_Sounder.vm' completed.
+Warning (PA1017) : Not support read random memory from block RAM via the blank initial value.
+Info    (PA0006) : Processing netlist completed.
+Info    (CT0002) : Physical Constraint parsed completed.
+Error   (CM2003) : Can't find object named 'w_Clk9m'.
+Warning (TA1052) : Generated clock is ignored.
+Warning (TA1064) : Unable to get clock with name 'w_Clk9m'.
+Warning (TA1064) : Unable to get clock with name 'w_Clk9m'.
+Warning (TA1064) : Unable to get clock with name 'w_Clk9m'.
+Warning (TA1064) : Unable to get clock with name 'w_Clk9m'.
+Warning (TA1064) : Unable to get clock with name 'w_Clk9m'.
+Warning (TA1064) : Unable to get clock with name 'w_Clk9m'.
+Warning (TA1064) : Unable to get clock with name 'w_Clk9m'.
+Warning (TA1064) : Unable to get clock with name 'w_Clk9m'.
+Warning (TA1064) : Unable to get clock with name 'w_Clk9m'.
+Warning (TA1064) : Unable to get clock with name 'w_Clk9m'.
+Warning (TA1064) : Unable to get clock with name 'w_Clk9m'.
+Info    (PR0001) : Placement in progress......
+Info    (PR0005) : Routing in progress......
+Info    (PR0002) : Placement and routing completed.
+Info    (TA0001) : Timing analysis completed.
+Info    (FS0001) : Bitstream generation in progress......
+Info    (FS0002) : Bitstream generation completed.
+Info    (PW0001) : Power analysis completed.
+Info    (CM0008) : Generate 'D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\impl\pnr\Tang-Nano_MIDI_Sounder.power.html' file completed.
+Info    (CM0008) : Generate 'D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\impl\pnr\Tang-Nano_MIDI_Sounder.pin.html' file completed.
+Info    (CM0008) : Generate 'D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\impl\pnr\Tang-Nano_MIDI_Sounder.rpt.html' file completed.
+Info    (CM0008) : Generate 'D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\impl\pnr\Tang-Nano_MIDI_Sounder.rpt.txt' file completed.
+Info    (CM0008) : Generate 'D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\impl\pnr\Tang-Nano_MIDI_Sounder.tr.html' file completed.
+Info    (CM0001) : Sun Jan 26 20:32:11 2020
+

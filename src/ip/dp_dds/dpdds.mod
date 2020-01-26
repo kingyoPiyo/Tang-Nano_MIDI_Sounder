@@ -1,0 +1,21 @@
+-series GW1N
+-device GW1N-1
+-package QFN48
+-part_number GW1N-LV1QN48C6/I5
+
+
+-mod_name DP_DDS
+-file_name dpdds
+-path C:/Users/kingyoZAL1/Desktop/FPGA/Tang-Nano/midi/midi_lcd_200126_2_SRAM/src/ip/dp_dds/gowin_dp/
+-type RAM_DP
+-file_type vlg
+-depth_0 64
+-depth_1 64
+-width_0 64
+-width_1 64
+-read_mode_0 bypass
+-read_mode_1 bypass
+-write_mode_0 normal
+-write_mode_1 normal
+-byteEnable 1
+-reset_mode sync

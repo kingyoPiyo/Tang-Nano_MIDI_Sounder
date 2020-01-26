@@ -1,0 +1,10 @@
+-d D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\impl\synthesize\rev_1\Tang-Nano_MIDI_Sounder.vm
+-p GW1N-1-QFN48-6
+-pn GW1N-LV1QN48C6/I5
+-cst D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\fpga_project.cst
+-cfg D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\impl\pnr\device.cfg
+-sdc D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\fpga_project.sdc
+-bit
+-tr
+-ph
+-timing

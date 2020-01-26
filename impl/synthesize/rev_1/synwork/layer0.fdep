@@ -1,0 +1,73 @@
+#OPTIONS:"|-layerid|0|-orig_srs|D:\\Documents\\GitHub\\Tang-Nano_MIDI_Sounder\\impl\\synthesize\\rev_1\\synwork\\Tang-Nano_MIDI_Sounder_comp.srs|-top|top|-prodtype|synplify_pro|-primux|-fixsmult|-sdff_counter|-nram|-divnmod|-nostructver|-gowin|-infer_seqShift|-D_MULTIPLE_FILE_COMPILATION_UNIT_|-I|D:\\Documents\\GitHub\\Tang-Nano_MIDI_Sounder\\impl\\synthesize\\|-I|C:\\Gowin\\Gowin_V1.9.2.02Beta\\SynplifyPro\\lib|-sysv|-devicelib|C:\\Gowin\\Gowin_V1.9.2.02Beta\\SynplifyPro\\lib\\generic\\gw1n.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-D_MULTIPLE_FILE_COMPILATION_UNIT_|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\Gowin\\Gowin_V1.9.2.02Beta\\SynplifyPro\\bin64\\c_ver.exe":1569428574
+#CUR:"C:\\Gowin\\Gowin_V1.9.2.02Beta\\SynplifyPro\\lib\\generic\\gw1n.v":1569433952
+#CUR:"C:\\Gowin\\Gowin_V1.9.2.02Beta\\SynplifyPro\\lib\\vlog\\hypermods.v":1569428306
+#CUR:"C:\\Gowin\\Gowin_V1.9.2.02Beta\\SynplifyPro\\lib\\vlog\\umr_capim.v":1569428306
+#CUR:"C:\\Gowin\\Gowin_V1.9.2.02Beta\\SynplifyPro\\lib\\vlog\\scemi_objects.v":1569428306
+#CUR:"C:\\Gowin\\Gowin_V1.9.2.02Beta\\SynplifyPro\\lib\\vlog\\scemi_pipes.svh":1569428306
+#CUR:"D:\\Documents\\GitHub\\Tang-Nano_MIDI_Sounder\\src\\DDS.v":1580036634
+#CUR:"D:\\Documents\\GitHub\\Tang-Nano_MIDI_Sounder\\src\\DeltaSigma_DAC.v":1580034306
+#CUR:"D:\\Documents\\GitHub\\Tang-Nano_MIDI_Sounder\\src\\LCD_Controller.v":1580034267
+#CUR:"D:\\Documents\\GitHub\\Tang-Nano_MIDI_Sounder\\src\\MIDI_Decoder.v":1580035368
+#CUR:"D:\\Documents\\GitHub\\Tang-Nano_MIDI_Sounder\\src\\NoteNumTable.v":1580034167
+#CUR:"D:\\Documents\\GitHub\\Tang-Nano_MIDI_Sounder\\src\\top.v":1580034340
+#CUR:"D:\\Documents\\GitHub\\Tang-Nano_MIDI_Sounder\\src\\UART_Rx.v":1580034679
+#CUR:"D:\\Documents\\GitHub\\Tang-Nano_MIDI_Sounder\\src\\ip\\dp_dds\\dpdds.v":1580028527
+#CUR:"D:\\Documents\\GitHub\\Tang-Nano_MIDI_Sounder\\src\\ip\\dram1\\dram1.v":1579947862
+#CUR:"D:\\Documents\\GitHub\\Tang-Nano_MIDI_Sounder\\src\\ip\\dram2\\dram2.v":1579991599
+#CUR:"D:\\Documents\\GitHub\\Tang-Nano_MIDI_Sounder\\src\\ip\\pll\\gowin_pll.v":1578759611
+#CUR:"D:\\Documents\\GitHub\\Tang-Nano_MIDI_Sounder\\src\\ip\\spram\\spram.v":1579993418
+#numinternalfiles:5
+#defaultlanguage:verilog
+0			"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\DDS.v" verilog
+1			"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\DeltaSigma_DAC.v" verilog
+2			"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\LCD_Controller.v" verilog
+3			"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\MIDI_Decoder.v" verilog
+4			"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\NoteNumTable.v" verilog
+5			"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\top.v" verilog
+6			"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\UART_Rx.v" verilog
+7			"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\ip\dp_dds\dpdds.v" verilog
+8			"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\ip\dram1\dram1.v" verilog
+9			"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\ip\dram2\dram2.v" verilog
+10			"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\ip\pll\gowin_pll.v" verilog
+11			"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\ip\spram\spram.v" verilog
+#Dependency Lists(Uses List)
+0 9 11 1
+1 1
+2 1
+3 8 1
+4 1
+5 10 6 3 4 0 1 2
+6 1
+7 1
+8 1
+9 1
+10 1
+11 1
+#Dependency Lists(Users Of)
+0 5
+1 5 0 2 3 4 6 7 8 9 10 11
+2 5
+3 5
+4 5
+5 -1
+6 5
+7 -1
+8 3
+9 0
+10 5
+11 0
+#Design Unit to File Association
+module work DP_ADDVAL 9
+module work SP_ACC 11
+module work DDS 0
+package work work_D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\DDS.v_unit 1
+module work DeltaSigma_DAC 1
+module work LCD_Controller 2
+module work DP_MIDIMSG 8
+module work MIDI_Decoder 3
+module work NoteNumTable 4
+module work Gowin_PLL 10
+module work UART_Rx 6
+module work top 5
+module work DP_DDS 7
