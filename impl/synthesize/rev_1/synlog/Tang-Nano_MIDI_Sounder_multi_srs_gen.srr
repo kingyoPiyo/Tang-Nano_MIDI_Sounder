@@ -16,13 +16,13 @@ Implementation : rev_1
 Synopsys Synopsys Netlist Linker, Version comp2019q1p1, Build 307R, Built Sep 25 2019 09:21:26
 
 @N|Running in 64-bit mode
-Options changed - recompiling
+File D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\impl\synthesize\rev_1\synwork\Tang-Nano_MIDI_Sounder_comp.srs changed - recompiling
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 88MB peak: 88MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Jan 26 20:31:56 2020
+# Mon Jan 27 22:20:53 2020
 
 ###########################################################]

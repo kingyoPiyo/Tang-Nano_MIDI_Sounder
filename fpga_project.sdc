@@ -13,8 +13,8 @@
 # Create Clock
 #**************************************************************
 create_clock -name mco -period 41.667 -waveform {0.000 20.834} [get_ports {mco}]
-create_generated_clock -name w_Clk72m -source [get_ports {mco}] -master_clock mco -divide_by 2 -multiply_by 6 [get_nets {w_Clk72m}]
-create_generated_clock -name w_Clk9m -source [get_ports {mco}] -master_clock mco -divide_by 8 -multiply_by 3 [get_nets {w_Clk9m}]
+create_generated_clock -name clk72m -source [get_ports {mco}] -master_clock mco -divide_by 2 -multiply_by 6 [get_nets {clk72m}]
+create_generated_clock -name clk9m -source [get_ports {mco}] -master_clock mco -divide_by 8 -multiply_by 3 [get_nets {clk9m}]
 
 
 #**************************************************************
@@ -25,26 +25,58 @@ create_generated_clock -name w_Clk9m -source [get_ports {mco}] -master_clock mco
 #**************************************************************
 # Set Output Delay
 #**************************************************************
-set_output_delay -add_delay -max -clock [get_clocks {w_Clk9m}]  3.000 [get_ports {lcd_clk}]
-set_output_delay -add_delay -min -clock [get_clocks {w_Clk9m}]  0.000 [get_ports {lcd_clk}]
-set_output_delay -add_delay -max -clock [get_clocks {w_Clk9m}]  3.000 [get_ports {lcd_hsync}]
-set_output_delay -add_delay -min -clock [get_clocks {w_Clk9m}]  0.000 [get_ports {lcd_hsync}]
-set_output_delay -add_delay -max -clock [get_clocks {w_Clk9m}]  3.000 [get_ports {lcd_vsync}]
-set_output_delay -add_delay -min -clock [get_clocks {w_Clk9m}]  0.000 [get_ports {lcd_vsync}]
-set_output_delay -add_delay -max -clock [get_clocks {w_Clk9m}]  3.000 [get_ports {lcd_de}]
-set_output_delay -add_delay -min -clock [get_clocks {w_Clk9m}]  0.000 [get_ports {lcd_de}]
-set_output_delay -add_delay -max -clock [get_clocks {w_Clk9m}]  3.000 [get_ports {lcd_data[*]}]
-set_output_delay -add_delay -min -clock [get_clocks {w_Clk9m}]  0.000 [get_ports {lcd_data[*]}]
+set_output_delay -add_delay -max -clock [get_clocks {clk9m}]  3.000 [get_ports {lcd_clk}]
+set_output_delay -add_delay -min -clock [get_clocks {clk9m}]  0.000 [get_ports {lcd_clk}]
+set_output_delay -add_delay -max -clock [get_clocks {clk9m}]  3.000 [get_ports {lcd_hsync}]
+set_output_delay -add_delay -min -clock [get_clocks {clk9m}]  0.000 [get_ports {lcd_hsync}]
+set_output_delay -add_delay -max -clock [get_clocks {clk9m}]  3.000 [get_ports {lcd_vsync}]
+set_output_delay -add_delay -min -clock [get_clocks {clk9m}]  0.000 [get_ports {lcd_vsync}]
+set_output_delay -add_delay -max -clock [get_clocks {clk9m}]  3.000 [get_ports {lcd_de}]
+set_output_delay -add_delay -min -clock [get_clocks {clk9m}]  0.000 [get_ports {lcd_de}]
+set_output_delay -add_delay -max -clock [get_clocks {clk9m}]  3.000 [get_ports {lcd_data[0]}]
+set_output_delay -add_delay -min -clock [get_clocks {clk9m}]  0.000 [get_ports {lcd_data[0]}]
+set_output_delay -add_delay -max -clock [get_clocks {clk9m}]  3.000 [get_ports {lcd_data[1]}]
+set_output_delay -add_delay -min -clock [get_clocks {clk9m}]  0.000 [get_ports {lcd_data[1]}]
+set_output_delay -add_delay -max -clock [get_clocks {clk9m}]  3.000 [get_ports {lcd_data[2]}]
+set_output_delay -add_delay -min -clock [get_clocks {clk9m}]  0.000 [get_ports {lcd_data[2]}]
+set_output_delay -add_delay -max -clock [get_clocks {clk9m}]  3.000 [get_ports {lcd_data[3]}]
+set_output_delay -add_delay -min -clock [get_clocks {clk9m}]  0.000 [get_ports {lcd_data[3]}]
+set_output_delay -add_delay -max -clock [get_clocks {clk9m}]  3.000 [get_ports {lcd_data[4]}]
+set_output_delay -add_delay -min -clock [get_clocks {clk9m}]  0.000 [get_ports {lcd_data[4]}]
+set_output_delay -add_delay -max -clock [get_clocks {clk9m}]  3.000 [get_ports {lcd_data[5]}]
+set_output_delay -add_delay -min -clock [get_clocks {clk9m}]  0.000 [get_ports {lcd_data[5]}]
+set_output_delay -add_delay -max -clock [get_clocks {clk9m}]  3.000 [get_ports {lcd_data[6]}]
+set_output_delay -add_delay -min -clock [get_clocks {clk9m}]  0.000 [get_ports {lcd_data[6]}]
+set_output_delay -add_delay -max -clock [get_clocks {clk9m}]  3.000 [get_ports {lcd_data[7]}]
+set_output_delay -add_delay -min -clock [get_clocks {clk9m}]  0.000 [get_ports {lcd_data[7]}]
+set_output_delay -add_delay -max -clock [get_clocks {clk9m}]  3.000 [get_ports {lcd_data[8]}]
+set_output_delay -add_delay -min -clock [get_clocks {clk9m}]  0.000 [get_ports {lcd_data[8]}]
+set_output_delay -add_delay -max -clock [get_clocks {clk9m}]  3.000 [get_ports {lcd_data[9]}]
+set_output_delay -add_delay -min -clock [get_clocks {clk9m}]  0.000 [get_ports {lcd_data[9]}]
+set_output_delay -add_delay -max -clock [get_clocks {clk9m}]  3.000 [get_ports {lcd_data[10]}]
+set_output_delay -add_delay -min -clock [get_clocks {clk9m}]  0.000 [get_ports {lcd_data[10]}]
+set_output_delay -add_delay -max -clock [get_clocks {clk9m}]  3.000 [get_ports {lcd_data[11]}]
+set_output_delay -add_delay -min -clock [get_clocks {clk9m}]  0.000 [get_ports {lcd_data[11]}]
+set_output_delay -add_delay -max -clock [get_clocks {clk9m}]  3.000 [get_ports {lcd_data[12]}]
+set_output_delay -add_delay -min -clock [get_clocks {clk9m}]  0.000 [get_ports {lcd_data[12]}]
+set_output_delay -add_delay -max -clock [get_clocks {clk9m}]  3.000 [get_ports {lcd_data[13]}]
+set_output_delay -add_delay -min -clock [get_clocks {clk9m}]  0.000 [get_ports {lcd_data[13]}]
+set_output_delay -add_delay -max -clock [get_clocks {clk9m}]  3.000 [get_ports {lcd_data[14]}]
+set_output_delay -add_delay -min -clock [get_clocks {clk9m}]  0.000 [get_ports {lcd_data[14]}]
+set_output_delay -add_delay -max -clock [get_clocks {clk9m}]  0.000 [get_ports {lcd_data[15]}]
+set_output_delay -add_delay -min -clock [get_clocks {clk9m}]  0.000 [get_ports {lcd_data[15]}]
 
 
 #**************************************************************
 # Set Clock Groups
 #**************************************************************
-set_clock_groups -asynchronous -group {w_Clk9m}
-set_clock_groups -asynchronous -group {w_Clk72m}
+set_clock_groups -asynchronous -group {clk9m}
+set_clock_groups -asynchronous -group {clk72m}
 
 #**************************************************************
 # Set False Path
 #**************************************************************
 set_false_path -from [get_ports {res_n}]
 set_false_path -from [get_ports {btn_b}]
+set_false_path -from [get_ports {uart_rx}]
+set_false_path -to   [get_ports {audio_o}]

@@ -7,10 +7,10 @@
 #CUR:"C:\\Gowin\\Gowin_V1.9.2.02Beta\\SynplifyPro\\lib\\vlog\\scemi_pipes.svh":1569428306
 #CUR:"D:\\Documents\\GitHub\\Tang-Nano_MIDI_Sounder\\src\\DDS.v":1580036634
 #CUR:"D:\\Documents\\GitHub\\Tang-Nano_MIDI_Sounder\\src\\DeltaSigma_DAC.v":1580034306
-#CUR:"D:\\Documents\\GitHub\\Tang-Nano_MIDI_Sounder\\src\\LCD_Controller.v":1580034267
-#CUR:"D:\\Documents\\GitHub\\Tang-Nano_MIDI_Sounder\\src\\MIDI_Decoder.v":1580035368
-#CUR:"D:\\Documents\\GitHub\\Tang-Nano_MIDI_Sounder\\src\\NoteNumTable.v":1580034167
-#CUR:"D:\\Documents\\GitHub\\Tang-Nano_MIDI_Sounder\\src\\top.v":1580034340
+#CUR:"D:\\Documents\\GitHub\\Tang-Nano_MIDI_Sounder\\src\\LCD_Controller.v":1580041419
+#CUR:"D:\\Documents\\GitHub\\Tang-Nano_MIDI_Sounder\\src\\MIDI_Decoder.v":1580040709
+#CUR:"D:\\Documents\\GitHub\\Tang-Nano_MIDI_Sounder\\src\\NoteNumTable.v":1580040684
+#CUR:"D:\\Documents\\GitHub\\Tang-Nano_MIDI_Sounder\\src\\top.v":1580131175
 #CUR:"D:\\Documents\\GitHub\\Tang-Nano_MIDI_Sounder\\src\\UART_Rx.v":1580034679
 #CUR:"D:\\Documents\\GitHub\\Tang-Nano_MIDI_Sounder\\src\\ip\\dp_dds\\dpdds.v":1580028527
 #CUR:"D:\\Documents\\GitHub\\Tang-Nano_MIDI_Sounder\\src\\ip\\dram1\\dram1.v":1579947862

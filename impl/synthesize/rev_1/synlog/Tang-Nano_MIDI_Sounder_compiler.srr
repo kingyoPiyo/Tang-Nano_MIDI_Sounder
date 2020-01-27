@@ -60,7 +60,7 @@ Synopsys Verilog Compiler, Version comp2019q1p1, Build 307R, Built Sep 25 2019 0
 @I::"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\ip\spram\spram.v" (library work)
 @W: CS141 :"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\ip\spram\spram.v":3:7:3:11|Unrecognized synthesis directive title. Verify the correct directive name.
 Verilog syntax check successful!
-Options changed - recompiling
+File D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\top.v changed - recompiling
 @N: CG364 :"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\DeltaSigma_DAC.v":8:0:8:9|Synthesizing module work_D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\DDS.v_unit in library work.
 Selecting top level module top
 @N: CG364 :"C:\Gowin\Gowin_V1.9.2.02Beta\SynplifyPro\lib\generic\gw1n.v":1800:7:1800:9|Synthesizing module PLL in library work.
@@ -73,9 +73,9 @@ Running optimization stage 1 on UART_Rx .......
 Running optimization stage 1 on DP .......
 @N: CG364 :"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\ip\dram1\dram1.v":8:7:8:16|Synthesizing module DP_MIDIMSG in library work.
 Running optimization stage 1 on DP_MIDIMSG .......
-@N: CG364 :"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\MIDI_Decoder.v":8:8:8:19|Synthesizing module MIDI_Decoder in library work.
+@N: CG364 :"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\MIDI_Decoder.v":6:8:6:19|Synthesizing module MIDI_Decoder in library work.
 Running optimization stage 1 on MIDI_Decoder .......
-@N: CG364 :"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\NoteNumTable.v":9:7:9:18|Synthesizing module NoteNumTable in library work.
+@N: CG364 :"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\NoteNumTable.v":6:7:6:18|Synthesizing module NoteNumTable in library work.
 Running optimization stage 1 on NoteNumTable .......
 @N: CG364 :"C:\Gowin\Gowin_V1.9.2.02Beta\SynplifyPro\lib\generic\gw1n.v":1323:7:1323:10|Synthesizing module DPX9 in library work.
 Running optimization stage 1 on DPX9 .......
@@ -113,7 +113,7 @@ Running optimization stage 2 on DP_ADDVAL .......
 Running optimization stage 2 on DPX9 .......
 Running optimization stage 2 on NoteNumTable .......
 Running optimization stage 2 on MIDI_Decoder .......
-@N: CL201 :"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\MIDI_Decoder.v":27:4:27:9|Trying to extract state machine for register r_state.
+@N: CL201 :"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\MIDI_Decoder.v":25:4:25:9|Trying to extract state machine for register r_state.
 Extracted state machine for register r_state
 State machine has 3 reachable states with original encodings of:
    00
@@ -130,12 +130,12 @@ For a summary of runtime and memory usage per design unit, please see file:
 @L: D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\impl\synthesize\rev_1\synwork\layer0.rt.csv
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 90MB peak: 100MB)
+At c_ver Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 91MB peak: 100MB)
 
 Process took 0h:00m:03s realtime, 0h:00m:03s cputime
 
 Process completed successfully.
-# Sun Jan 26 20:31:55 2020
+# Mon Jan 27 22:20:52 2020
 
 ###########################################################]
 ###########################################################[
@@ -162,7 +162,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Jan 26 20:31:55 2020
+# Mon Jan 27 22:20:52 2020
 
 ###########################################################]
 
@@ -172,11 +172,11 @@ For a summary of runtime and memory usage for all design units, please see file:
 
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 19MB peak: 19MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 19MB peak: 19MB)
 
-Process took 0h:00m:04s realtime, 0h:00m:03s cputime
+Process took 0h:00m:03s realtime, 0h:00m:03s cputime
 
 Process completed successfully.
-# Sun Jan 26 20:31:55 2020
+# Mon Jan 27 22:20:52 2020
 
 ###########################################################]

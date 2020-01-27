@@ -3,10 +3,10 @@
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 @N: MT206 |Auto Constrain mode is enabled
 @N: MO231 :"d:\documents\github\tang-nano_midi_sounder\src\uart_rx.v":31:4:31:9|Found counter in view:work.UART_Rx(verilog) instance i_baud_cnt[15:0] 
-@N: MO231 :"d:\documents\github\tang-nano_midi_sounder\src\midi_decoder.v":85:4:85:9|Found counter in view:work.MIDI_Decoder(verilog) instance r_rwaddr[5:0] 
+@N: MO231 :"d:\documents\github\tang-nano_midi_sounder\src\midi_decoder.v":83:4:83:9|Found counter in view:work.MIDI_Decoder(verilog) instance r_rwaddr[5:0] 
 @N: MO231 :"d:\documents\github\tang-nano_midi_sounder\src\dds.v":23:4:23:9|Found counter in view:work.DDS(verilog) instance r_acc_sum[5:0] 
 @N: MO231 :"d:\documents\github\tang-nano_midi_sounder\src\dds.v":23:4:23:9|Found counter in view:work.DDS(verilog) instance r_dds_ram_addr[5:0] 
-@N: MO106 :"d:\documents\github\tang-nano_midi_sounder\src\notenumtable.v":20:12:20:15|Found ROM NoteNumTable_inst.accTable[23:3] (in view: work.top(verilog)) with 128 words by 21 bits.
+@N: MO106 :"d:\documents\github\tang-nano_midi_sounder\src\notenumtable.v":17:12:17:15|Found ROM NoteNumTable_inst.accTable[23:3] (in view: work.top(verilog)) with 128 words by 21 bits.
 @N: FX271 :"d:\documents\github\tang-nano_midi_sounder\src\uart_rx.v":47:4:47:9|Replicating instance UART_Rx_inst.bitCounter_reg[1] (in view: work.top(verilog)) with 5 loads 1 time to improve timing.
 @N: FX271 :"d:\documents\github\tang-nano_midi_sounder\src\uart_rx.v":47:4:47:9|Replicating instance UART_Rx_inst.bitCounter_reg[0] (in view: work.top(verilog)) with 8 loads 1 time to improve timing.
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  

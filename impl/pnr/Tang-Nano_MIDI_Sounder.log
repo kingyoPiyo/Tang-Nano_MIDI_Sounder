@@ -3,19 +3,6 @@ Info    (PA0004) : Parsing netlist file 'D:\Documents\GitHub\Tang-Nano_MIDI_Soun
 Warning (PA1017) : Not support read random memory from block RAM via the blank initial value.
 Info    (PA0006) : Processing netlist completed.
 Info    (CT0002) : Physical Constraint parsed completed.
-Error   (CM2003) : Can't find object named 'w_Clk9m'.
-Warning (TA1052) : Generated clock is ignored.
-Warning (TA1064) : Unable to get clock with name 'w_Clk9m'.
-Warning (TA1064) : Unable to get clock with name 'w_Clk9m'.
-Warning (TA1064) : Unable to get clock with name 'w_Clk9m'.
-Warning (TA1064) : Unable to get clock with name 'w_Clk9m'.
-Warning (TA1064) : Unable to get clock with name 'w_Clk9m'.
-Warning (TA1064) : Unable to get clock with name 'w_Clk9m'.
-Warning (TA1064) : Unable to get clock with name 'w_Clk9m'.
-Warning (TA1064) : Unable to get clock with name 'w_Clk9m'.
-Warning (TA1064) : Unable to get clock with name 'w_Clk9m'.
-Warning (TA1064) : Unable to get clock with name 'w_Clk9m'.
-Warning (TA1064) : Unable to get clock with name 'w_Clk9m'.
 Info    (PR0001) : Placement in progress......
 Info    (PR0005) : Routing in progress......
 Info    (PR0002) : Placement and routing completed.
@@ -28,5 +15,5 @@ Info    (CM0008) : Generate 'D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\impl\pnr
 Info    (CM0008) : Generate 'D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\impl\pnr\Tang-Nano_MIDI_Sounder.rpt.html' file completed.
 Info    (CM0008) : Generate 'D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\impl\pnr\Tang-Nano_MIDI_Sounder.rpt.txt' file completed.
 Info    (CM0008) : Generate 'D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\impl\pnr\Tang-Nano_MIDI_Sounder.tr.html' file completed.
-Info    (CM0001) : Sun Jan 26 20:32:11 2020
+Info    (CM0001) : Mon Jan 27 22:21:09 2020
 

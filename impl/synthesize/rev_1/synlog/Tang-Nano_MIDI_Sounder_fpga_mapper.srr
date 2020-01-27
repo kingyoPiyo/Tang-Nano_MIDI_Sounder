@@ -1,4 +1,4 @@
-# Sun Jan 26 20:31:59 2020
+# Mon Jan 27 22:20:56 2020
 
 
 Copyright (C) 1994-2019 Synopsys, Inc.
@@ -44,10 +44,10 @@ Available hyper_sources - for debug and ip models
 
 @N: MT206 |Auto Constrain mode is enabled
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 218MB peak: 218MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 218MB peak: 218MB)
 
 @N: MO231 :"d:\documents\github\tang-nano_midi_sounder\src\uart_rx.v":31:4:31:9|Found counter in view:work.UART_Rx(verilog) instance i_baud_cnt[15:0] 
-@N: MO231 :"d:\documents\github\tang-nano_midi_sounder\src\midi_decoder.v":85:4:85:9|Found counter in view:work.MIDI_Decoder(verilog) instance r_rwaddr[5:0] 
+@N: MO231 :"d:\documents\github\tang-nano_midi_sounder\src\midi_decoder.v":83:4:83:9|Found counter in view:work.MIDI_Decoder(verilog) instance r_rwaddr[5:0] 
 @N: MO231 :"d:\documents\github\tang-nano_midi_sounder\src\dds.v":23:4:23:9|Found counter in view:work.DDS(verilog) instance r_acc_sum[5:0] 
 @N: MO231 :"d:\documents\github\tang-nano_midi_sounder\src\dds.v":23:4:23:9|Found counter in view:work.DDS(verilog) instance r_dds_ram_addr[5:0] 
 
@@ -68,9 +68,9 @@ Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elaps
 
 Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 223MB peak: 223MB)
 
-@N: MO106 :"d:\documents\github\tang-nano_midi_sounder\src\notenumtable.v":20:12:20:15|Found ROM NoteNumTable_inst.accTable[23:3] (in view: work.top(verilog)) with 128 words by 21 bits.
+@N: MO106 :"d:\documents\github\tang-nano_midi_sounder\src\notenumtable.v":17:12:17:15|Found ROM NoteNumTable_inst.accTable[23:3] (in view: work.top(verilog)) with 128 words by 21 bits.
 
-Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 227MB peak: 227MB)
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:02s; Memory used current: 227MB peak: 227MB)
 
 
 Finished technology mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 232MB peak: 232MB)
@@ -212,7 +212,7 @@ Finished technology timing optimizations and critical path resynthesis (Real Tim
 Finished restoring hierarchy (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 233MB peak: 233MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 160MB peak: 233MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:05s; Memory used current: 160MB peak: 233MB)
 
 Writing Analyst data base D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\impl\synthesize\rev_1\synwork\Tang-Nano_MIDI_Sounder_m.srm
 
@@ -231,12 +231,12 @@ Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:06s; CPU Tim
 Start final timing analysis (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 233MB peak: 235MB)
 
 @W: MT246 :"d:\documents\github\tang-nano_midi_sounder\src\ip\pll\gowin_pll.v":21:4:21:11|Blackbox PLL is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
-@W: MT420 |Found inferred clock Gowin_PLL|clkoutd_inferred_clock with period 8.71ns. Please declare a user-defined clock on net Gowin_PLL_isnt.lcd_clk_c.
-@W: MT420 |Found inferred clock Gowin_PLL|clkout_inferred_clock with period 6.82ns. Please declare a user-defined clock on net Gowin_PLL_isnt.w_Clk72m.
+@W: MT420 |Found inferred clock Gowin_PLL|clkoutd_inferred_clock with period 8.71ns. Please declare a user-defined clock on net Gowin_PLL_isnt.clk9m.
+@W: MT420 |Found inferred clock Gowin_PLL|clkout_inferred_clock with period 6.82ns. Please declare a user-defined clock on net Gowin_PLL_isnt.clk72m.
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Sun Jan 26 20:32:06 2020
+# Timing report written on Mon Jan 27 22:21:03 2020
 #
 
 
@@ -1737,10 +1737,10 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 
 Timing exceptions that could not be applied
 
-Finished final timing analysis (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 234MB peak: 235MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 233MB peak: 235MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 234MB peak: 235MB)
+Finished timing report (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 233MB peak: 235MB)
 
 ---------------------------------------
 Resource Usage Report for top 
@@ -1786,6 +1786,6 @@ Mapper successful!
 At Mapper Exit (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 73MB peak: 235MB)
 
 Process took 0h:00m:07s realtime, 0h:00m:07s cputime
-# Sun Jan 26 20:32:07 2020
+# Mon Jan 27 22:21:04 2020
 
 ###########################################################]

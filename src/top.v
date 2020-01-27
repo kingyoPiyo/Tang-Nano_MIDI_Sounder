@@ -28,8 +28,8 @@ module top (
     /**************************************************************
      *  Wires
      *************************************************************/
-    wire            w_Clk9m;
-    wire            w_Clk72m;
+    wire            clk9m;
+    wire            clk72m;
     wire            w_RxFlg;
     wire    [ 7:0]  w_RxData;
     wire    [ 5:0]  w_NoteAddr;
@@ -43,15 +43,15 @@ module top (
      *************************************************************/
     Gowin_PLL Gowin_PLL_isnt (
         .clkin ( mco ),         // input clkin
-        .clkout ( w_Clk72m ),   // output clkout
-        .clkoutd ( w_Clk9m )    // output clkoutd
+        .clkout ( clk72m ),     // output clkout
+        .clkoutd ( clk9m )      // output clkoutd
     );
 
     /**************************************************************
      *  MIDI UART Rx
      *************************************************************/
     UART_Rx UART_Rx_inst (
-        .i_clk ( w_Clk9m ),
+        .i_clk ( clk9m ),
         .i_res_n ( res_n ),
         .i_baud ( 28 ),         // bpsの8倍 (clk / (38400 x 8)) - 1
         .i_rx_pin ( uart_rx ),
@@ -63,7 +63,7 @@ module top (
      *  MIDI Decoder
      *************************************************************/
     MIDI_Decoder MIDI_Decoder_inst (
-        .i_clk ( w_Clk9m ),
+        .i_clk ( clk9m ),
         .i_res_n ( res_n ),
         .i_rx_flg ( w_RxFlg ),
         .i_rx_data ( w_RxData ),
@@ -83,8 +83,8 @@ module top (
      *  DDS
      *************************************************************/
     DDS DDS_inst (
-        .i_clk1 ( w_Clk9m ),    // 9MHz
-        .i_clk2 ( w_Clk72m ),   // 72MHz
+        .i_clk1 ( clk9m ),      // 9MHz
+        .i_clk2 ( clk72m ),     // 72MHz
         .i_res_n ( res_n ),
         .i_note_addr ( w_NoteAddr[5:0] ),
         .i_note_en ( w_NoteData[15] ),
@@ -97,7 +97,7 @@ module top (
      *  Delta Sigma DAC
      *************************************************************/
     DeltaSigma_DAC DeltaSigma_DAC_inst (
-        .i_clk ( w_Clk72m ),
+        .i_clk ( clk72m ),
         .i_res_n ( res_n ),
         .i_adata ( w_Sound[5:0] ),
         .o_out ( audio_o )
@@ -107,7 +107,7 @@ module top (
      *  LCD Controller
      *************************************************************/
     LCD_Controller LCD_Controller_inst (
-        .i_clk ( w_Clk9m ),
+        .i_clk ( clk9m ),
         .i_res_n ( res_n ),
         .i_note_en ( w_NoteData[15] ),
         .i_note_num ( w_NoteData[14:8] ),

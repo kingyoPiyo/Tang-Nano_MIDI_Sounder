@@ -14,15 +14,38 @@ Hostname: ZAL1
 Implementation : rev_1
 Synopsys HDL compiler and linker, Version comp2019q1p1, Build 307R, Built Sep 25 2019 09:21:26
 
-Modified Files: 0
+Modified Files: 1
 FID:  path (prevtimestamp, timestamp)
+16       D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\top.v (2020-01-26 19:25:40, 2020-01-27 22:19:35)
 
 *******************************************************************
-Modules that may have changed as a result of file changes: 0
+Modules that may have changed as a result of file changes: 11
 MID:  lib.cell.view
+0        work.DDS.verilog may have changed because the following files changed:
+                        D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\top.v (2020-01-26 19:25:40, 2020-01-27 22:19:35) <-- (may instantiate this module)
+1        work.DP_ADDVAL.verilog may have changed because the following files changed:
+                        D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\top.v (2020-01-26 19:25:40, 2020-01-27 22:19:35) <-- (may instantiate this module)
+3        work.DP_MIDIMSG.verilog may have changed because the following files changed:
+                        D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\top.v (2020-01-26 19:25:40, 2020-01-27 22:19:35) <-- (may instantiate this module)
+4        work.DeltaSigma_DAC.verilog may have changed because the following files changed:
+                        D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\top.v (2020-01-26 19:25:40, 2020-01-27 22:19:35) <-- (may instantiate this module)
+5        work.Gowin_PLL.verilog may have changed because the following files changed:
+                        D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\top.v (2020-01-26 19:25:40, 2020-01-27 22:19:35) <-- (may instantiate this module)
+6        work.LCD_Controller.verilog may have changed because the following files changed:
+                        D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\top.v (2020-01-26 19:25:40, 2020-01-27 22:19:35) <-- (may instantiate this module)
+7        work.MIDI_Decoder.verilog may have changed because the following files changed:
+                        D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\top.v (2020-01-26 19:25:40, 2020-01-27 22:19:35) <-- (may instantiate this module)
+8        work.NoteNumTable.verilog may have changed because the following files changed:
+                        D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\top.v (2020-01-26 19:25:40, 2020-01-27 22:19:35) <-- (may instantiate this module)
+9        work.SP_ACC.verilog may have changed because the following files changed:
+                        D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\top.v (2020-01-26 19:25:40, 2020-01-27 22:19:35) <-- (may instantiate this module)
+10       work.UART_Rx.verilog may have changed because the following files changed:
+                        D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\top.v (2020-01-26 19:25:40, 2020-01-27 22:19:35) <-- (may instantiate this module)
+11       work.top.verilog may have changed because the following files changed:
+                        D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\top.v (2020-01-26 19:25:40, 2020-01-27 22:19:35) <-- (module definition)
 
 *******************************************************************
-Unmodified files: 17
+Unmodified files: 16
 FID:  path (timestamp)
 0        C:\Gowin\Gowin_V1.9.2.02Beta\SynplifyPro\lib\generic\gw1n.v (2019-09-26 02:52:32)
 1        C:\Gowin\Gowin_V1.9.2.02Beta\SynplifyPro\lib\vlog\hypermods.v (2019-09-26 01:18:26)
@@ -31,29 +54,17 @@ FID:  path (timestamp)
 4        C:\Gowin\Gowin_V1.9.2.02Beta\SynplifyPro\lib\vlog\umr_capim.v (2019-09-26 01:18:26)
 5        D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\DDS.v (2020-01-26 20:03:54)
 6        D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\DeltaSigma_DAC.v (2020-01-26 19:25:06)
-7        D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\LCD_Controller.v (2020-01-26 19:24:27)
-8        D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\MIDI_Decoder.v (2020-01-26 19:42:48)
-9        D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\NoteNumTable.v (2020-01-26 19:22:47)
+7        D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\LCD_Controller.v (2020-01-26 21:23:39)
+8        D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\MIDI_Decoder.v (2020-01-26 21:11:49)
+9        D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\NoteNumTable.v (2020-01-26 21:11:24)
 10       D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\UART_Rx.v (2020-01-26 19:31:19)
 11       D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\ip\dp_dds\dpdds.v (2020-01-26 17:48:47)
 12       D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\ip\dram1\dram1.v (2020-01-25 19:24:22)
 13       D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\ip\dram2\dram2.v (2020-01-26 07:33:19)
 14       D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\ip\pll\gowin_pll.v (2020-01-12 01:20:11)
 15       D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\ip\spram\spram.v (2020-01-26 08:03:38)
-16       D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\top.v (2020-01-26 19:25:40)
 
 *******************************************************************
-Unchanged modules: 12
+Unchanged modules: 1
 MID:  lib.cell.view
-0        work.DDS.verilog
-1        work.DP_ADDVAL.verilog
 2        work.DP_DDS.verilog
-3        work.DP_MIDIMSG.verilog
-4        work.DeltaSigma_DAC.verilog
-5        work.Gowin_PLL.verilog
-6        work.LCD_Controller.verilog
-7        work.MIDI_Decoder.verilog
-8        work.NoteNumTable.verilog
-9        work.SP_ACC.verilog
-10       work.UART_Rx.verilog
-11       work.top.verilog

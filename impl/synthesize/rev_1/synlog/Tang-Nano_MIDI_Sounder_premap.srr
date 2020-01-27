@@ -1,4 +1,4 @@
-# Sun Jan 26 20:31:56 2020
+# Mon Jan 27 22:20:54 2020
 
 
 Copyright (C) 1994-2019 Synopsys, Inc.
@@ -118,16 +118,16 @@ Finished Pre Mapping Phase.
 Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 220MB peak: 220MB)
 
 
-Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 220MB peak: 220MB)
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 220MB peak: 220MB)
 
 
-Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 220MB peak: 220MB)
+Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 220MB peak: 220MB)
 
 Pre-mapping successful!
 
 At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 142MB peak: 222MB)
 
 Process took 0h:00m:02s realtime, 0h:00m:02s cputime
-# Sun Jan 26 20:31:59 2020
+# Mon Jan 27 22:20:56 2020
 
 ###########################################################]
