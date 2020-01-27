@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version P-2019.03G
 #--  Project file D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\impl\synthesize\rev_1\run_options.txt
-#--  Written on Mon Jan 27 22:20:49 2020
+#--  Written on Mon Jan 27 22:31:09 2020
 
 
 #project files

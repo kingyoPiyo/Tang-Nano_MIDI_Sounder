@@ -63,7 +63,7 @@ set_output_delay -add_delay -max -clock [get_clocks {clk9m}]  3.000 [get_ports {
 set_output_delay -add_delay -min -clock [get_clocks {clk9m}]  0.000 [get_ports {lcd_data[13]}]
 set_output_delay -add_delay -max -clock [get_clocks {clk9m}]  3.000 [get_ports {lcd_data[14]}]
 set_output_delay -add_delay -min -clock [get_clocks {clk9m}]  0.000 [get_ports {lcd_data[14]}]
-set_output_delay -add_delay -max -clock [get_clocks {clk9m}]  0.000 [get_ports {lcd_data[15]}]
+set_output_delay -add_delay -max -clock [get_clocks {clk9m}]  3.000 [get_ports {lcd_data[15]}]
 set_output_delay -add_delay -min -clock [get_clocks {clk9m}]  0.000 [get_ports {lcd_data[15]}]
 
 

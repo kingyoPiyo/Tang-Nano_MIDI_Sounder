@@ -1,13 +1,13 @@
 C:\Gowin\Gowin_V1.9.2.02Beta\SynplifyPro\bin64\m_generic.exe  -prodtype  synplify_pro   -encrypt  -pro  -rundir  D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\impl\synthesize\rev_1   -part GW1N_1  -package QFN48  -grade -6    -maxfan 10000 -RWCheckOnRam 1 -pipe -fixgatedclocks 1 -fixgeneratedclocks 1 -csa_carry_chain_maxlen 0 -infer_seqShift -enable_gcc_in_premap -preserve_slash_names -summaryfile D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\impl\synthesize\rev_1\synlog\report\Tang-Nano_MIDI_Sounder_premap.xml -merge_inferred_clocks 0  -top_level_module  top  -implementation  rev_1  -ovm  D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\impl\synthesize\rev_1\Tang-Nano_MIDI_Sounder.vm  -conchk_prepass  D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\impl\synthesize\rev_1\Tang-Nano_MIDI_Sounder_cck.rpt   -autoconstraint  -freq 100.000   D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\impl\synthesize\rev_1\synwork\Tang-Nano_MIDI_Sounder_mult.srs  -flow prepass  -gcc_prepass  -osrd  D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\impl\synthesize\rev_1\synwork\Tang-Nano_MIDI_Sounder_prem.srd  -qsap  D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\impl\synthesize\rev_1\Tang-Nano_MIDI_Sounder.sap  -devicelib  C:\Gowin\Gowin_V1.9.2.02Beta\SynplifyPro\lib\generic\gw1n.v  -ologparam  D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\impl\synthesize\rev_1\syntmp\Tang-Nano_MIDI_Sounder.plg  -osyn  D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\impl\synthesize\rev_1\synwork\Tang-Nano_MIDI_Sounder_prem.srd  -prjdir  D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\impl\synthesize\  -prjname  Tang-Nano_MIDI_Sounder  -log  D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\impl\synthesize\rev_1\synlog\Tang-Nano_MIDI_Sounder_premap.srr  -sn  2019.03  -jobname  "premap" 
 relcom:C:\Gowin\Gowin_V1.9.2.02Beta\SynplifyPro\bin64\m_generic.exe -prodtype synplify_pro -encrypt -pro -rundir ..\..\rev_1 -part GW1N_1 -package QFN48 -grade -6 -maxfan 10000 -RWCheckOnRam 1 -pipe -fixgatedclocks 1 -fixgeneratedclocks 1 -csa_carry_chain_maxlen 0 -infer_seqShift -enable_gcc_in_premap -preserve_slash_names -summaryfile ..\synlog\report\Tang-Nano_MIDI_Sounder_premap.xml -merge_inferred_clocks 0 -top_level_module top -implementation rev_1 -ovm ..\Tang-Nano_MIDI_Sounder.vm -conchk_prepass ..\Tang-Nano_MIDI_Sounder_cck.rpt -autoconstraint -freq 100.000 ..\synwork\Tang-Nano_MIDI_Sounder_mult.srs -flow prepass -gcc_prepass -osrd ..\synwork\Tang-Nano_MIDI_Sounder_prem.srd -qsap ..\Tang-Nano_MIDI_Sounder.sap -devicelib C:\Gowin\Gowin_V1.9.2.02Beta\SynplifyPro\lib\generic\gw1n.v -ologparam Tang-Nano_MIDI_Sounder.plg -osyn ..\synwork\Tang-Nano_MIDI_Sounder_prem.srd -prjdir ..\..\ -prjname Tang-Nano_MIDI_Sounder -log ..\synlog\Tang-Nano_MIDI_Sounder_premap.srr -sn 2019.03 -jobname "premap"
-rc:1 success:1 runtime:3
-file:..\Tang-Nano_MIDI_Sounder.vm|io:o|time:1580130248|size:138381|exec:0|csum:
-file:..\Tang-Nano_MIDI_Sounder_cck.rpt|io:o|time:1580131256|size:2847|exec:0|csum:
-file:..\synwork\Tang-Nano_MIDI_Sounder_mult.srs|io:i|time:1580131253|size:4508|exec:0|csum:2AB3A615BA0B492434CBD9784216DA54
-file:..\synwork\Tang-Nano_MIDI_Sounder_prem.srd|io:o|time:1580131255|size:40801|exec:0|csum:
-file:..\Tang-Nano_MIDI_Sounder.sap|io:o|time:1580131256|size:1647|exec:0|csum:
+rc:1 success:1 runtime:2
+file:..\Tang-Nano_MIDI_Sounder.vm|io:o|time:0|size:-1|exec:0|csum:
+file:..\Tang-Nano_MIDI_Sounder_cck.rpt|io:o|time:1580131876|size:2847|exec:0|csum:
+file:..\synwork\Tang-Nano_MIDI_Sounder_mult.srs|io:i|time:1580131873|size:4508|exec:0|csum:0049C8F3F8B733D80C9F8B295853BFEC
+file:..\synwork\Tang-Nano_MIDI_Sounder_prem.srd|io:o|time:1580131875|size:40799|exec:0|csum:
+file:..\Tang-Nano_MIDI_Sounder.sap|io:o|time:1580131876|size:1647|exec:0|csum:
 file:C:\Gowin\Gowin_V1.9.2.02Beta\SynplifyPro\lib\generic\gw1n.v|io:i|time:1569433952|size:120208|exec:0|csum:6A30DD570B0F44118E5DE3BFDC7E191D
-file:Tang-Nano_MIDI_Sounder.plg|io:o|time:1580131254|size:0|exec:0|csum:
-file:..\synwork\Tang-Nano_MIDI_Sounder_prem.srd|io:o|time:1580131255|size:40801|exec:0|csum:
-file:..\synlog\Tang-Nano_MIDI_Sounder_premap.srr|io:o|time:1580131256|size:8012|exec:0|csum:
+file:Tang-Nano_MIDI_Sounder.plg|io:o|time:1580131874|size:0|exec:0|csum:
+file:..\synwork\Tang-Nano_MIDI_Sounder_prem.srd|io:o|time:1580131875|size:40799|exec:0|csum:
+file:..\synlog\Tang-Nano_MIDI_Sounder_premap.srr|io:o|time:1580131876|size:8012|exec:0|csum:
 file:C:\Gowin\Gowin_V1.9.2.02Beta\SynplifyPro\bin64\m_generic.exe|io:i|time:1569429982|size:39923200|exec:1|csum:D32AC8F00088465E04798584717DB37D

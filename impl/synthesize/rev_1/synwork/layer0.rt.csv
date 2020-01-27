@@ -8,10 +8,10 @@ work, SP, 0h:00m:00s,     90 MB
 work, DP_ADDVAL, 0h:00m:00s,     90 MB
 work, DPX9, 0h:00m:00s,     90 MB
 work, NoteNumTable, 0h:00m:00s,     90 MB
-work, MIDI_Decoder, 0h:00m:00s,    100 MB
-work, DP_MIDIMSG, 0h:00m:00s,    100 MB
-work, DP, 0h:00m:00s,    100 MB
-work, UART_Rx, 0h:00m:00s,    100 MB
-work, Gowin_PLL, 0h:00m:00s,    100 MB
-work, PLL, 0h:00m:00s,    100 MB
+work, MIDI_Decoder, 0h:00m:00s,    101 MB
+work, DP_MIDIMSG, 0h:00m:00s,    101 MB
+work, DP, 0h:00m:00s,    101 MB
+work, UART_Rx, 0h:00m:00s,    101 MB
+work, Gowin_PLL, 0h:00m:00s,    101 MB
+work, PLL, 0h:00m:00s,    101 MB
 work, work_D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\DDS.v_unit, 0h:00m:00s,      0 MB

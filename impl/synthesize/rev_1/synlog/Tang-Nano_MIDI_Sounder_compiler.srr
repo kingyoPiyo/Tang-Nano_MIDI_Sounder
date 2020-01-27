@@ -60,7 +60,6 @@ Synopsys Verilog Compiler, Version comp2019q1p1, Build 307R, Built Sep 25 2019 0
 @I::"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\ip\spram\spram.v" (library work)
 @W: CS141 :"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\ip\spram\spram.v":3:7:3:11|Unrecognized synthesis directive title. Verify the correct directive name.
 Verilog syntax check successful!
-File D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\top.v changed - recompiling
 @N: CG364 :"D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\DeltaSigma_DAC.v":8:0:8:9|Synthesizing module work_D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\src\DDS.v_unit in library work.
 Selecting top level module top
 @N: CG364 :"C:\Gowin\Gowin_V1.9.2.02Beta\SynplifyPro\lib\generic\gw1n.v":1800:7:1800:9|Synthesizing module PLL in library work.
@@ -130,12 +129,12 @@ For a summary of runtime and memory usage per design unit, please see file:
 @L: D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\impl\synthesize\rev_1\synwork\layer0.rt.csv
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 91MB peak: 100MB)
+At c_ver Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 91MB peak: 101MB)
 
 Process took 0h:00m:03s realtime, 0h:00m:03s cputime
 
 Process completed successfully.
-# Mon Jan 27 22:20:52 2020
+# Mon Jan 27 22:31:12 2020
 
 ###########################################################]
 ###########################################################[
@@ -162,7 +161,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Jan 27 22:20:52 2020
+# Mon Jan 27 22:31:12 2020
 
 ###########################################################]
 
@@ -177,6 +176,6 @@ At c_hdl Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory
 Process took 0h:00m:03s realtime, 0h:00m:03s cputime
 
 Process completed successfully.
-# Mon Jan 27 22:20:52 2020
+# Mon Jan 27 22:31:12 2020
 
 ###########################################################]
