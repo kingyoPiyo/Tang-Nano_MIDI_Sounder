@@ -1,7 +1,0 @@
-C:\Gowin\Gowin_V1.9.2.02Beta\SynplifyPro\bin64\syn_nfilter.exe  -link  -top  top  -multisrs  D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\impl\synthesize\rev_1\synwork\Tang-Nano_MIDI_Sounder_comp.srs  -osyn  D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\impl\synthesize\rev_1\synwork\Tang-Nano_MIDI_Sounder_mult.srs  -log  D:\Documents\GitHub\Tang-Nano_MIDI_Sounder\impl\synthesize\rev_1\synlog\Tang-Nano_MIDI_Sounder_multi_srs_gen.srr 
-relcom:C:\Gowin\Gowin_V1.9.2.02Beta\SynplifyPro\bin64\syn_nfilter.exe -link -top top -multisrs ..\synwork\Tang-Nano_MIDI_Sounder_comp.srs -osyn ..\synwork\Tang-Nano_MIDI_Sounder_mult.srs -log ..\synlog\Tang-Nano_MIDI_Sounder_multi_srs_gen.srr
-rc:0 success:1 runtime:1
-file:..\synwork\Tang-Nano_MIDI_Sounder_comp.srs|io:i|time:1580131872|size:29674|exec:0|csum:101CAED436EAA8AED810141F39639605
-file:..\synwork\Tang-Nano_MIDI_Sounder_mult.srs|io:o|time:1580131873|size:4508|exec:0|csum:
-file:..\synlog\Tang-Nano_MIDI_Sounder_multi_srs_gen.srr|io:o|time:1580131874|size:1031|exec:0|csum:
-file:C:\Gowin\Gowin_V1.9.2.02Beta\SynplifyPro\bin64\syn_nfilter.exe|io:i|time:1569428746|size:8840192|exec:1|csum:53D4B99CD3CB87F879FC8DA558113E33

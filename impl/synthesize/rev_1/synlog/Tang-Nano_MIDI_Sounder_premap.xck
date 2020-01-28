@@ -1,2 +1,0 @@
-ckid0_0:@|S:Gowin_PLL_isnt.pll_inst.CLKOUTD@|E:LCD_Controller_inst.r_hInVisibleArea@|F:@syn_dgcc_clockid0_0==1@|M:ClockId_0_0
-ckid0_1:@|S:Gowin_PLL_isnt.pll_inst.CLKOUT@|E:DeltaSigma_DAC_inst.sigma[6:0]@|F:@syn_dgcc_clockid0_1==1@|M:ClockId_0_1
