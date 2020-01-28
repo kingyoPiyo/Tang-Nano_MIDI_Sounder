@@ -9,12 +9,12 @@ module LCD_Controller (
     input   wire            i_note_en,
     input   wire    [ 6:0]  i_note_num,
     output  wire            o_clk,
-    output  wire            o_hsync,
-    output  wire            o_vsync,
-    output  wire            o_de,
-    output  wire    [ 9:0]  o_x_cnt,
-    output  wire    [ 8:0]  o_y_cnt,
-    output  wire    [15:0]  o_lcd_data
+    output  reg             o_hsync,
+    output  reg             o_vsync,
+    output  reg             o_de,
+    output  reg     [ 9:0]  o_x_cnt,
+    output  reg     [ 8:0]  o_y_cnt,
+    output  reg     [15:0]  o_lcd_data
     );
 
     /**************************************************************
@@ -75,32 +75,44 @@ module LCD_Controller (
         end
     end
 
-
-    assign o_clk = i_clk;
-    assign o_hsync = (r_hPeriodCnt[9:0] < DispHPulseWidth) ? 1'b0 : 1'b1;   // HSYNC信号生成
-    assign o_vsync = (r_vPeriodCnt[8:0] < DispVPulseWidth) ? 1'b0 : 1'b1;   // VSYNC信号生成
-    assign o_de = r_hInVisibleArea & r_vInVisibleArea;
-    assign o_x_cnt = r_hPeriodCnt - DispHBackPorch;
-    assign o_y_cnt = r_vPeriodCnt - DispVBackPorch;
-
-
     /**************************************************************
      *  UI生成
      *************************************************************/
     // 横線(点線)
-    wire w_sep_line = (o_y_cnt[3:0] == 4'd0) && (o_x_cnt[0] == 1'b1);
+    wire            w_sep_line  = (o_y_cnt[3:0] == 4'd0) && (o_x_cnt[0] == 1'b1);
 
     // バーグラフ
-    wire    [5:0]   w_noteAddr = o_y_cnt[7:2];
-    wire            w_bar      = (o_x_cnt[9:2] == i_note_num[6:0]) ? i_note_en : 1'b0;
+    wire    [5:0]   w_noteAddr  = o_y_cnt[7:2];
+    wire            w_bar       = (o_x_cnt[9:2] == i_note_num[6:0]) ? i_note_en : 1'b0;
     
     // ドットデータ生成
-    wire w_bar_r = w_noteAddr[1:0] == 2'd0 || w_noteAddr[1:0] == 2'd3;
-    wire w_bar_g = w_noteAddr[1:0] == 2'd1 || w_noteAddr[1:0] == 2'd3;
-    wire w_bar_b = w_noteAddr[1:0] == 2'd2 || w_noteAddr[1:0] == 2'd3;
-    assign o_lcd_data[15:0] = o_y_cnt[8:0] > 9'd256 ? 16'h0000 :                // 範囲外
-                            (w_bar && o_y_cnt[8:0] <= 9'd255) ? {{5{w_bar_r}}, {6{w_bar_g}}, {5{w_bar_b}}} :    // バー
-                            w_sep_line ? 16'hFFFF : 16'h0000;                   // 横線
+    wire            w_bar_r     = w_noteAddr[1:0] == 2'd0 || w_noteAddr[1:0] == 2'd3;
+    wire            w_bar_g     = w_noteAddr[1:0] == 2'd1 || w_noteAddr[1:0] == 2'd3;
+    wire            w_bar_b     = w_noteAddr[1:0] == 2'd2 || w_noteAddr[1:0] == 2'd3;
+    wire    [15:0]  w_lcd_data  = o_y_cnt[8:0] > 9'd256 ? 16'h0000 :    // 範囲外
+                                  (w_bar && o_y_cnt[8:0] <= 9'd255) ? {{5{w_bar_r}}, {6{w_bar_g}}, {5{w_bar_b}}} :    // バー
+                                  w_sep_line ? 16'hFFFF : 16'h0000;     // 横線
 
+    /**************************************************************
+     *  出力レジスタ
+     *************************************************************/
+    always @(posedge i_clk or negedge i_res_n) begin
+        if (~i_res_n) begin
+            o_hsync     <= 1'b1;
+            o_vsync     <= 1'b1;
+            o_de        <= 1'b0;
+            o_x_cnt     <= 10'd0;
+            o_y_cnt     <= 9'd0;
+            o_lcd_data  <= 16'd0;
+        end else begin
+            o_hsync     <= (r_hPeriodCnt[9:0] < DispHPulseWidth) ? 1'b0 : 1'b1;   // HSYNC信号生成
+            o_vsync     <= (r_vPeriodCnt[8:0] < DispVPulseWidth) ? 1'b0 : 1'b1;   // VSYNC信号生成
+            o_de        <= r_hInVisibleArea & r_vInVisibleArea;
+            o_x_cnt     <= r_hPeriodCnt - DispHBackPorch;
+            o_y_cnt     <= r_vPeriodCnt - DispVBackPorch;
+            o_lcd_data  <= w_lcd_data;
+        end
+    end
+    assign o_clk = i_clk;
 
 endmodule
