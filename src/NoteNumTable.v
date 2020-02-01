@@ -4,11 +4,11 @@
  * Design   : kingyo
  ********************************************************/
 module NoteNumTable (
-    input   wire    [ 6:0]  notenum,
-    output  wire    [23:0]  val
+    input   wire    [ 6:0]  i_notenum,
+    output  wire    [23:0]  o_val
     );
     
-    assign val[23:0] = accTable( notenum );
+    assign o_val[23:0] = accTable( i_notenum );
     
     function [23:0] accTable;
         input   [6:0]   notenum;

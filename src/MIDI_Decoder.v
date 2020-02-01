@@ -10,18 +10,18 @@
         input   wire    [ 7:0]  i_rx_data,
         
         // RAM B-Port
-        input   wire    [ 5:0]  i_rdaddr,	// 0-3:MIDI ch1, 4-7:MIDI ch2, ...
-        output  wire    [15:0]  o_rddata 	// {noteOnOff[0], noteNum[6:0], 1'b0, velocity[6:0]}
+        input   wire    [ 5:0]  i_rdaddr,   // 0-3:MIDI ch1, 4-7:MIDI ch2, ...
+        output  wire    [15:0]  o_rddata    // {noteOnOff[0], noteNum[6:0], 1'b0, velocity[6:0]}
     );
     
     //-----------------------
     // MIDI受信コマンド解析
     //-----------------------
-    reg 	[1:0]	r_state;
-    reg		[3:0]	r_midi_ch;
-    reg		[6:0]	r_midi_note;
-    reg		[6:0]	r_midi_velocity;
-    reg				r_midi_noteen;
+    reg     [1:0]   r_state;
+    reg     [3:0]   r_midi_ch;
+    reg     [6:0]   r_midi_note;
+    reg     [6:0]   r_midi_velocity;
+    reg             r_midi_noteen;
     always @(posedge i_clk or negedge i_res_n) begin
         if (~i_res_n) begin
             r_state <= 2'd0;
@@ -47,7 +47,7 @@
                 end
 
                 // 第2バイト
-                2'd1: begin	
+                2'd1: begin
                     // ノート番号
                     r_midi_note <= i_rx_data[6:0];
                     r_state <= 2'd2;
@@ -63,11 +63,11 @@
     end
 
     //--------------------------
-    // 受信データをRAMに格納する
+    // デコード結果をRAMに書き込む
     //--------------------------
-    reg	r_ram_busy;
+    reg r_ram_busy;
     // 書き込みデータ            ノートON/OFF ,        ノート番号,    0,             ベロシティ
-    wire	[15:0] w_wrdata = {r_midi_noteen, r_midi_note[6:0], 1'b0, r_midi_velocity[6:0]};
+    wire    [15:0] w_wrdata = {r_midi_noteen, r_midi_note[6:0], 1'b0, r_midi_velocity[6:0]};
     // Write Enable
     reg            r_wen;
     // 読み出しデータ
@@ -123,26 +123,27 @@
     end
 
     //--------------------------
-    // ノート番号格納RAM (A Port:INPUT / B Port:OUTPUT)
+    // ノート番号格納RAM 
+    // A Port: INPUT
+    // B Port: OUTPUT
     //--------------------------
     DP_MIDIMSG midi_note_ram (
-        .douta ( w_rddata[15:0] ), //output [15:0] douta
-        .doutb ( o_rddata[15:0] ), //output [15:0] doutb
-        .clka ( i_clk ), //input i_clka
-        .ocea ( 1'b1 ), //input ocea
-        .cea ( 1'b1 ), //input cea
-        .reseta ( ~i_res_n ), //input reseta
-        .wrea ( r_wen ), //input wrea
-        .clkb ( i_clk ), //input i_clkb
-        .oceb ( 1'b1 ), //input oceb
-        .ceb ( 1'b1 ), //input ceb
-        .resetb ( ~i_res_n ), //input resetb
-        .wreb ( 1'b0 ), //input wreb
-        .ada ( r_rwaddr[5:0] ), //input [5:0] ada
-        .dina ( w_wrdata[15:0] ), //input [15:0] dina
-        .adb ( i_rdaddr[5:0] ), //input [5:0] adb
-        .dinb ( 16'd0 ) //input [15:0] dinb
+        .douta ( w_rddata[15:0] ),  // output [15:0] douta
+        .doutb ( o_rddata[15:0] ),  // output [15:0] doutb
+        .clka ( i_clk ),            // input i_clka
+        .ocea ( 1'b1 ),             // input ocea
+        .cea ( 1'b1 ),              // input cea
+        .reseta ( ~i_res_n ),       // input reseta
+        .wrea ( r_wen ),            // input wrea
+        .clkb ( i_clk ),            // input i_clkb
+        .oceb ( 1'b1 ),             // input oceb
+        .ceb ( 1'b1 ),              // input ceb
+        .resetb ( ~i_res_n ),       // input resetb
+        .wreb ( 1'b0 ),             // input wreb
+        .ada ( r_rwaddr[5:0] ),     // input [5:0] ada
+        .dina ( w_wrdata[15:0] ),   // input [15:0] dina
+        .adb ( i_rdaddr[5:0] ),     // input [5:0] adb
+        .dinb ( 16'd0 )             // input [15:0] dinb
     );
-
 
 endmodule

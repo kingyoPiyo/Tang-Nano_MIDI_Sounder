@@ -30,7 +30,7 @@ module top (
      *************************************************************/
     wire            clk9m;
     wire            clk72m;
-    wire            w_RxFlg;
+    wire            w_RxDone;
     wire    [ 7:0]  w_RxData;
     wire    [ 5:0]  w_NoteAddr;
     wire    [15:0]  w_NoteData;
@@ -48,14 +48,14 @@ module top (
     );
 
     /**************************************************************
-     *  MIDI UART Rx
+     *  UART Receiver
      *************************************************************/
     UART_Rx UART_Rx_inst (
         .i_clk ( clk9m ),
         .i_res_n ( res_n ),
         .i_baud ( 28 ),         // bpsの8倍 (clk / (38400 x 8)) - 1
         .i_rx_pin ( uart_rx ),
-        .o_rxFlg ( w_RxFlg ),
+        .o_rxDone ( w_RxDone ),
         .o_rxData ( w_RxData )
     );
 
@@ -65,7 +65,7 @@ module top (
     MIDI_Decoder MIDI_Decoder_inst (
         .i_clk ( clk9m ),
         .i_res_n ( res_n ),
-        .i_rx_flg ( w_RxFlg ),
+        .i_rx_flg ( w_RxDone ),
         .i_rx_data ( w_RxData ),
         .i_rdaddr ( w_NoteAddr[5:0] ),  // 0-3:MIDI ch1, 4-7:MIDI ch2, ...
         .o_rddata ( w_NoteData[15:0] )  // {noteOnOff[0], noteNum[6:0], 1'b0, velocity[6:0]}
@@ -75,8 +75,8 @@ module top (
      *  Note Num -> DDS Add Value Convert
      *************************************************************/
     NoteNumTable NoteNumTable_inst (
-        .notenum ( w_NoteData[14:8] ),
-        .val ( w_AddVal[23:0] )
+        .i_notenum ( w_NoteData[14:8] ),
+        .o_val ( w_AddVal[23:0] )
     );
 
     /**************************************************************

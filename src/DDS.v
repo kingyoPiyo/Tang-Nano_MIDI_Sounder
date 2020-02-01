@@ -42,35 +42,44 @@ module DDS (
         end
     end
 
-    // 加算値RAM(PORTA:9MHz / PORTB:72MHz)
+    //--------------------------
+    // DDS加算値RAM 
+    // [  24]: ノートON/OFF
+    // [23:0]: DDS位相加算値
+    // A Port: 入力 9MHz
+    // B Port: 出力 72MHz
+    //--------------------------
     DP_ADDVAL dram2 (
-        .douta ( /* none */ ), //output [24:0] douta
-        .doutb ( w_dram2_rddata[24:0] ), //output [24:0] doutb
-        .clka ( i_clk1 ), //input clka
-        .ocea ( 1'b1) , //input ocea
-        .cea ( 1'b1 ), //input cea
-        .reseta ( ~i_res_n ), //input reseta
-        .wrea ( i_note_wren ), //input wrea
-        .clkb ( i_clk2 ), //input clkb
-        .oceb ( 1'b1 ), //input oceb
-        .ceb ( 1'b1 ), //input ceb
-        .resetb ( ~i_res_n ), //input resetb
-        .wreb ( 1'b0 ), //input wreb
-        .ada ( i_note_addr[5:0] ), //input [5:0] ada
-        .dina ( {i_note_en, i_add_val[23:0]} ), //input [24:0] dina
-        .adb ( r_dds_ram_addr[5:0] ), //input [5:0] adb
-        .dinb ( /* none */ ) //input [24:0] dinb
+        .douta ( /* none */ ),              // output [24:0] douta
+        .doutb ( w_dram2_rddata[24:0] ),    // output [24:0] doutb
+        .clka ( i_clk1 ),                   // input clka
+        .ocea ( 1'b1) ,                     // input ocea
+        .cea ( 1'b1 ),                      // input cea
+        .reseta ( ~i_res_n ),               // input reseta
+        .wrea ( i_note_wren ),              // input wrea
+        .clkb ( i_clk2 ),                   // input clkb
+        .oceb ( 1'b1 ),                     // input oceb
+        .ceb ( 1'b1 ),                      // input ceb
+        .resetb ( ~i_res_n ),               // input resetb
+        .wreb ( 1'b0 ),                     // input wreb
+        .ada ( i_note_addr[5:0] ),          // input [5:0] ada
+        .dina ( {i_note_en, i_add_val[23:0]} ), // input [24:0] dina
+        .adb ( r_dds_ram_addr[5:0] ),       // input [5:0] adb
+        .dinb ( /* none */ )                // input [24:0] dinb
     );
 
+    //--------------------------
     // DDS アキュムレータ値RAM
+    //--------------------------
     SP_ACC spram1 (
-        .dout ( w_acc_ram_rddata[25:0] ), //output [31:0] dout
-        .clk ( i_clk2 ), //input clk
-        .oce ( 1'b1 ), //input oce
-        .ce ( 1'b1 ), //input ce
-        .reset ( ~i_res_n ), //input reset
-        .wre ( r_dpram_tien ), //input wre
-        .ad ( r_dds_ram_addr[5:0] ), //input [5:0] ad
-        .din ( w_acc_ans[25:0] ) //input [31:0] din
+        .dout ( w_acc_ram_rddata[25:0] ),   // output [31:0] dout
+        .clk ( i_clk2 ),                    // input clk
+        .oce ( 1'b1 ),                      // input oce
+        .ce ( 1'b1 ),                       // input ce
+        .reset ( ~i_res_n ),                // input reset
+        .wre ( r_dpram_tien ),              // input wre
+        .ad ( r_dds_ram_addr[5:0] ),        // input [5:0] ad
+        .din ( w_acc_ans[25:0] )            // input [31:0] din
     );
+
 endmodule

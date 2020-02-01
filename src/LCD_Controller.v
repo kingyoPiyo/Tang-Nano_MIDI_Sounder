@@ -27,7 +27,7 @@ module LCD_Controller (
     localparam DispHPulseWidth  = 1;
 
     localparam DispVPeriodTime  = 288;
-    localparam DispHeight       = 272;	
+    localparam DispHeight       = 272;
     localparam DispVBackPorch   = 12;
     localparam DispVFrontPorch  = 4;
     localparam DispVPulseWidth  = 10;
