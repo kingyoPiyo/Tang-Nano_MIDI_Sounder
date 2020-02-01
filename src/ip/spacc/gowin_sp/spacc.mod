@@ -5,12 +5,12 @@
 
 
 -mod_name SP_ACC
--file_name spram
--path C:/Users/kingyoZAL1/Desktop/FPGA/Tang-Nano/midi/midi_lcd_200126_SRAM/src/ip/spram/gowin_sp/
+-file_name spacc
+-path D:/Documents/GitHub/Tang-Nano_MIDI_Sounder/src/ip/spacc/gowin_sp/
 -type RAM_SP
 -file_type vlg
 -depth 64
--width 32
+-width 26
 -read_mode bypass
 -write_mode normal
 -reset_mode sync

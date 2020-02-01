@@ -72,14 +72,14 @@ module DDS (
     // DDS アキュムレータ値RAM
     //--------------------------
     SP_ACC spram1 (
-        .dout ( w_acc_ram_rddata[25:0] ),   // output [31:0] dout
+        .dout ( w_acc_ram_rddata[25:0] ),   // output [25:0] dout
         .clk ( i_clk2 ),                    // input clk
         .oce ( 1'b1 ),                      // input oce
         .ce ( 1'b1 ),                       // input ce
         .reset ( ~i_res_n ),                // input reset
         .wre ( r_dpram_tien ),              // input wre
         .ad ( r_dds_ram_addr[5:0] ),        // input [5:0] ad
-        .din ( w_acc_ans[25:0] )            // input [31:0] din
+        .din ( w_acc_ans[25:0] )            // input [25:0] din
     );
 
 endmodule

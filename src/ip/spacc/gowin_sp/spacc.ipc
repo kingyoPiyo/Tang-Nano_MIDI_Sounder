@@ -1,6 +1,6 @@
 [General]
 ipc_version=4
-file=spram
+file=spacc
 module=SP_ACC
 target_device=gw1n1-004
 type=ram_sp
@@ -12,5 +12,5 @@ DEPTH=64
 LANG=0
 READ=0
 RESET_MODE=true
-WIDTH=32
+WIDTH=26
 WRITE=0
