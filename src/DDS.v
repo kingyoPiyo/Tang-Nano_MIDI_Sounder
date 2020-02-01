@@ -65,7 +65,7 @@ module DDS (
         .ada ( i_note_addr[5:0] ),          // input [5:0] ada
         .dina ( {i_note_en, i_add_val[23:0]} ), // input [24:0] dina
         .adb ( r_dds_ram_addr[5:0] ),       // input [5:0] adb
-        .dinb ( /* none */ )                // input [24:0] dinb
+        .dinb ( 25'd0 )                     // input [24:0] dinb
     );
 
     //--------------------------

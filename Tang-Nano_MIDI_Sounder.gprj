@@ -12,7 +12,6 @@
         <File path="src/NoteNumTable.v" type="file.verilog" enable="1"/>
         <File path="src/top.v" type="file.verilog" enable="1"/>
         <File path="src/UART_Rx.v" type="file.verilog" enable="1"/>
-        <File path="src/ip/dp_dds/dpdds.v" type="file.verilog" enable="1"/>
         <File path="src/ip/dram1/dram1.v" type="file.verilog" enable="1"/>
         <File path="src/ip/dram2/dram2.v" type="file.verilog" enable="1"/>
         <File path="src/ip/pll/gowin_pll.v" type="file.verilog" enable="1"/>
