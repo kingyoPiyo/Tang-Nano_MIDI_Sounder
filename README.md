@@ -15,6 +15,7 @@ LCDには発音中のスロットが表示されます。
 - MIDI UARTボーレート：38.4kbps
 - MIDI UART入力ピン：18
 - 音声出力ピン：17 (ΔΣ-DAC出力、1kΩ+0.01uFのLPFと、10uFくらいのDCカットコンデンサを付けて下さい。)
+- 動作確認済みLCD：ATM0430D25
 
 # 回路図
 ![Schematic](doc/Schematic.png)  
