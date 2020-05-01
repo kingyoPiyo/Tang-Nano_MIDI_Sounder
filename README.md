@@ -21,6 +21,10 @@ LCDには発音中のスロットが表示されます。
 ![Schematic](doc/Schematic.png)  
 ※LCDの配線は省略
 
+# 全体構成図
+MIDIシーケンサ（Domino）からTang-Nanoボードまでの接続は以下を参考ください。
+![SystemBlock](doc/SystemBlock.png)  
+
 # 開発環境
 - IDE : GOWIN FPGA Designer Version1.9.2.02 Beta build(35976)
 
