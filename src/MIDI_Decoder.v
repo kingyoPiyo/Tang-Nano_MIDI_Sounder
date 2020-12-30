@@ -58,6 +58,10 @@
                     r_midi_velocity <= i_rx_data[6:0];
                     r_state <= 2'd0;
                 end
+
+                default: begin
+                    r_state <= 2'd0;
+                end
             endcase
         end
     end
